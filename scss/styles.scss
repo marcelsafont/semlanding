@@ -71,6 +71,9 @@ strong, b{
   font-weight: 700;
 }
 
+img{
+  max-width:100%;
+}
 
 .container{
   max-width:1100px;
@@ -104,6 +107,13 @@ strong, b{
   font-family: "Amatic SC", sans-serif;
   font-weight: 700;
   font-size:4.4em;
+  line-height:1.2em;
+}
+
+.heading-small{
+  font-family: "Amatic SC", sans-serif;
+  font-weight: 700;
+  font-size:3.8em;
   line-height:1.2em;
 }
 
@@ -146,6 +156,7 @@ strong, b{
     h3{
       color:var(--color_blue);
       padding-bottom:5px;
+      font-size:4rem;
     }
     p{
       color:var(--color_blue);
@@ -179,7 +190,7 @@ strong, b{
       margin-bottom:40px;
       &:before{
         content:"";
-        background:url('/semlanding/img/arrow-list.svg') no-repeat center center;
+        background:url('../img/arrow-list.svg') no-repeat center center;
         height:20px;
         width:20px;
         display:inline-block;
@@ -237,6 +248,7 @@ strong, b{
     }
     .check *{
       color:#fff!important;
+      line-height:1.7rem;
     }
     .actions{
       margin-top:30px;
@@ -257,7 +269,7 @@ strong, b{
 
 .section-forth{
   padding:80px 0;
-  background:url('/semlanding/img/bg-section-forth.jpg') no-repeat center center;
+  background:url('../img/bg-section-forth.jpg') no-repeat center center;
   background-size:cover;
   .d-flex{
     gap:50px;
@@ -269,7 +281,60 @@ strong, b{
   background:var(--color_blue);
 }
 
+@media screen and (max-width:1100px){
+  .intro{
+    .box{
+      flex: 0 0 700px;
+    }
+  }
+}
+
+@media screen and (max-width:991px){
+  .intro{
+    .d-flex{
+      align-items: center;
+    }
+    .col-image{
+      width:300px;
+      img{
+        max-width:100%;
+      }
+    }
+    .box{
+      padding:30px 0;
+      flex: 0 0 600px;
+      padding-left:190px;
+    }
+  }
+  .second-section{
+    .col-image{
+      width:450px;
+    }
+  }
+  .section-form{
+    padding:50px 0;
+    h2{
+      padding:0;
+    }
+    form{
+      padding:50px 0px;
+    }
+  }
+}
+
 @media screen and (max-width:768px){
+  .heading{
+    font-size:3rem;
+  }
+  .second-section{
+    .col-image{
+      width:100%;
+    }
+  }
+
+  .footer{
+    padding:50px 0px;
+  }
 
   .d-flex{
     flex-direction: column;
@@ -277,17 +342,59 @@ strong, b{
   .intro{
     padding-top:70px;
     h1{
-      font-size:2.4rem;
       padding:0;
     }
+    
     .col-image{
       margin-right:0;
       margin-bottom:-100px;
     }
     .box{
-      padding:150px 25px 0 25px;
+      padding:130px 25px 25px 25px;
       flex: 0 0 auto;
       text-align: center;
+      .cta{
+        width:100%;
+        margin-top:45px;
+      }
+      h2{
+        padding-bottom:25px;
+      }
+    }
+  }
+
+  .second-section{
+    padding:50px 0;
+    *{
+      font-size:1.3rem;
+      line-height:1.2em;
+    }
+    ul li{
+      margin-bottom:30px;
+    }
+  }
+  .section-form{
+    h2{
+      font-size:2.5rem;
+    }
+    button{
+      width:100%;
+    }
+  }
+  .section-forth{
+    padding:70px 0 100px 0;
+    *{
+      text-align: center;
+    }
+    .d-flex{
+      > div{
+        width:100%;
+      }
+    }
+    
+    .cta{
+      width:100%;
+      display:block;
     }
   }
 }
