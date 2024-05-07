@@ -302,6 +302,18 @@ img {
   align-self: start;
 }
 
+#mensajeConfirmacion {
+  padding: 50px 0;
+  font-size: 2rem;
+  line-height: 1.2em;
+  justify-content: center;
+  gap: 40px;
+}
+#mensajeConfirmacion * {
+  color: #fff;
+  text-align: left;
+}
+
 .second-section {
   background: #609F80;
   padding: 100px 0 90px 0;
@@ -399,6 +411,11 @@ img {
   border: 0;
   font-size: 1rem;
 }
+.section-form form .error {
+  text-align: left;
+  padding: 10px 0;
+  color: #FFB74B;
+}
 
 .section-forth {
   padding: 80px 0;
@@ -447,6 +464,13 @@ img {
   }
 }
 @media screen and (max-width: 768px) {
+  #mensajeConfirmacion {
+    flex-direction: column;
+  }
+  #mensajeConfirmacion img {
+    max-width: 250px;
+    margin: auto;
+  }
   .heading {
     font-size: 3rem;
   }

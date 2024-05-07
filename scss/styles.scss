@@ -169,6 +169,19 @@ img{
   }
 }
 
+#mensajeConfirmacion{
+  padding:50px 0;
+  font-size:2rem;
+  line-height:1.2em;
+  justify-content: center;
+  gap:40px;
+ 
+  *{
+    color:#fff;
+    text-align: left;
+  }
+}
+
 .second-section{
   background: #609F80;
   padding:100px 0 90px 0;
@@ -264,6 +277,11 @@ img{
         font-size:1rem;
       }
     }
+    .error{
+      text-align: left;
+      padding:10px 0;
+      color:#FFB74B;
+    }
   }
 }
 
@@ -323,6 +341,13 @@ img{
 }
 
 @media screen and (max-width:768px){
+  #mensajeConfirmacion{
+    flex-direction: column;
+    img{
+      max-width:250px;
+      margin:auto;
+    }
+  }
   .heading{
     font-size:3rem;
   }
