@@ -258,6 +258,10 @@ img {
   text-decoration: none;
   line-height: 1.3em;
 }
+.cta:hover {
+  transition: all 0.3s;
+  background-color: var(--color_green);
+}
 
 .intro {
   background: linear-gradient(253.03deg, #EC8679 21.5%, #DA5447 87.14%);
@@ -410,6 +414,11 @@ img {
   appearance: none;
   border: 0;
   font-size: 1rem;
+  cursor: pointer;
+}
+.section-form form .actions button:hover {
+  transition: all 0.3s;
+  background-color: var(--color_green);
 }
 .section-form form .error {
   text-align: left;
@@ -428,6 +437,27 @@ img {
 
 .footer {
   background: var(--color_blue);
+}
+
+.missage-form {
+  background-color: var(--color_green);
+  padding: 130px 0;
+}
+.missage-form .d-flex {
+  gap: 50px;
+}
+.missage-form * {
+  color: #fff;
+}
+.missage-form .content .logos {
+  margin-bottom: 30px;
+}
+.missage-form .content h2 {
+  margin-bottom: 20px;
+}
+.missage-form .content p {
+  font-size: 1.3rem;
+  line-height: 1.5em;
 }
 
 @media screen and (max-width: 1100px) {
@@ -533,5 +563,11 @@ img {
   .section-forth .cta {
     width: 100%;
     display: block;
+  }
+  .missage-form {
+    padding: 50px 0;
+  }
+  .missage-form .col-image {
+    max-width: 250px;
   }
 }

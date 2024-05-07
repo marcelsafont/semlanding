@@ -65,9 +65,9 @@ document.getElementById('registroForm').addEventListener('submit', function(even
         })
         .then(response => {
             dataLayer.push({'event': 'event_form_register'});
-
-            document.getElementById('registroForm').style.display = 'none';
-            document.getElementById('mensajeConfirmacion').style.display = 'flex';
+            window.location.href = 'confirmacion.html';
+            // document.getElementById('registroForm').style.display = 'none';
+            // document.getElementById('mensajeConfirmacion').style.display = 'flex';
         })
         .catch(error => {
             console.error('Error:', error);
