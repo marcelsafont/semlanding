@@ -1,0 +1,123 @@
+.footer {
+    padding: 70px 50px;
+    color: white;
+    font-size: 14px;
+    font-weight: 300;
+    .container{
+      max-width:1300px;
+    }
+    a {
+        text-decoration: none;
+
+        color: inherit;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+
+    .columns {
+        display: grid;
+
+        grid-template-columns: 1fr 2fr 1fr;
+        gap: 50px;
+
+        @media screen and (max-width: 748px) {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .left {
+            display: flex;
+            flex-direction: column;
+
+            @media screen and (max-width: 748px) {
+                align-items: center;
+
+                width: 100%;
+            }
+
+            .inner {
+                .social {
+                    display: flex;
+                   gap:30px;
+
+                    margin-top: 30px;
+                    a {
+                        // margin-right: 10px;
+                    }
+                    img {
+                        width: auto;
+                        height: 20px;
+                    }
+                }
+            }
+        }
+
+
+        .center {
+            display: flex;
+            flex: 1 0 auto;
+            flex-direction: column;
+            justify-content: space-between;
+
+
+            .adresses {
+                display: flex;
+                justify-content: space-between;
+
+                gap: 50px;
+
+                @media screen and (max-width: 748px) {
+                    flex-direction: column;
+                }
+
+                .adress {
+                    display: flex;
+                    flex-direction: column;
+
+                    gap: 8px;
+                }
+            }
+
+            .links {
+                display: flex;
+                flex-direction: column;
+
+                gap: 8px;
+                @media screen and (max-width: 748px) {
+                    margin: 20px 0;
+                }
+            }
+        }
+
+        .right {
+            display: flex;
+            align-items: flex-end;
+            flex-direction: column;
+
+            font-weight: 700;
+            font-style: 14px;
+
+            gap: 10px;
+
+            @media screen and (max-width: 748px) {
+                align-items: flex-start;
+            }
+            .links {
+                display: flex;
+                align-items: flex-start;
+                flex-direction: column;
+
+                gap: 10px;
+
+                @media screen and (max-width: 748px) {
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+}

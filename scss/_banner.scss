@@ -1,0 +1,38 @@
+.cookies {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+
+    width: 300px;
+    padding: 20px;
+
+    color: #fff;
+    background: #222;
+
+    font-size: 17px;
+
+    a {
+        text-decoration: none;
+
+        color: #fff;
+
+        font-weight: 700;
+    }
+
+    .novaConsentButton {
+        margin-top: 10px;
+        padding: 10px 20px;
+
+        cursor: pointer;
+        text-align: center;
+
+        color: var(--color_green);
+        border: 0;
+        border-radius: 25px;
+        background-color: var(--color_green);
+
+        &:hover {
+            background-color: var(--color_blue);
+        }
+    }
+}
